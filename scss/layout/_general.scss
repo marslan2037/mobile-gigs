@@ -13,3 +13,16 @@ body {
         margin: 0 auto;
     }
 }
+button {
+    border-radius: 10px;
+    width: 305px;
+    height: 91px;
+    color:#D3531A;
+    cursor: pointer;
+    line-height: 91px;
+}
+.playstore-btn {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 30px;
+}

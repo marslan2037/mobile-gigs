@@ -15,9 +15,127 @@ body {
   margin: 0 auto;
 }
 
-header .logo {
+button {
+  border-radius: 10px;
+  width: 305px;
+  height: 91px;
+  color: #D3531A;
+  cursor: pointer;
+  line-height: 91px;
+}
+
+.playstore-btn {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 30px;
+}
+
+.banner {
+  background: #fdeadf;
+  padding-bottom: 166px;
+}
+.banner .header-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-items: end;
+}
+.banner .header-content .logo {
   width: 330px;
   height: 220px;
+}
+.banner .header-content .logo a {
+  display: block;
+  width: 320px;
+  height: 220px;
+  text-indent: -9000px;
+  background-image: url(../../images/logo.png);
+  background-size: cover;
+}
+.banner .header-content .contact-btn {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 30px;
+  align-self: center;
+}
+.banner .header-content .contact-btn button {
+  border: 1px solid #d3531a;
+  background: #fdeadf;
+  font-size: 30px;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.banner .banner-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.banner .banner-content .banner-title h1 {
+  font-size: 75px;
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Poppins";
+  line-height: 115px;
+  margin-bottom: 40px;
+}
+.banner .banner-content .banner-title h1 span {
+  color: #d3531a;
+  font-size: 95px;
+  font-weight: 700;
+}
+
+.middle-content .verify-btn {
+  text-align: center;
+  padding: 105px 0;
+}
+.middle-content .verify-btn button {
+  width: 570px;
+  height: 150px;
+  border-radius: 20px;
+  line-height: 150px;
+  text-align: center;
+  background-color: #F69765;
+  color: #fff;
+  font-size: 40px;
+  border: 1px solid #F69765;
+  font-weight: 900;
+}
+.middle-content .find-mobile {
+  background-color: #F69765;
+  padding: 126px 0px;
+}
+.middle-content .find-mobile .mg-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 76px;
+  align-items: center;
+}
+.middle-content .find-mobile h3 {
+  font-size: 60px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+footer {
+  background-color: #110702;
+  color: #fff;
+}
+footer .footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 67px;
+  padding: 90px 160px 0px 160px;
+}
+footer .footer-content .footer-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+footer .footer-content .footer-info h2 {
+  font-size: 64px;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

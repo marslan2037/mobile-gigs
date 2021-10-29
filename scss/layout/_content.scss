@@ -1,0 +1,33 @@
+.middle-content {
+    .verify-btn {
+        text-align: center;
+        padding: 105px 0;
+        button {
+            width: 570px;
+            height: 150px;
+            border-radius: 20px;
+            line-height: 150px;
+            text-align: center;
+            background-color: #F69765;
+            color: #fff;
+            font-size: 40px;
+            border: 1px solid  #F69765;
+            font-weight: 900;
+        }
+    }
+    .find-mobile {
+        background-color: #F69765;
+        padding: 126px 0px;
+        .mg-grid {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-gap: 76px;
+            align-items: center;
+        }
+        h3 {
+            font-size: 60px;
+            line-height: 30px;
+            font-weight: 400;
+        }
+    }
+}

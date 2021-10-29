@@ -1,7 +1,57 @@
-header {
+.banner {
+    background: #fdeadf;
+    padding-bottom: 166px;
+    .header-content {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        justify-items: end;
 
-    .logo {
-        width: 330px;
-        height: 220px;
+        .logo {
+            width: 330px;
+            height: 220px;
+            a {
+                display: block;
+                width: 320px;
+                height: 220px;
+                text-indent: -9000px;
+                background-image: url(../../images/logo.png);
+                background-size: cover;
+            }
+        }
+        .contact-btn {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 30px;
+            align-self: center;
+            button {
+                border: 1px solid #d3531a;
+                background: #fdeadf;
+                font-size: 30px;
+                font-weight: 900;
+                font-style: normal;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .banner-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        .banner-title {
+            h1 {
+                font-size: 75px;
+                font-weight: 600;
+                font-style: normal;
+                font-family: "Poppins";
+                line-height: 115px;
+                margin-bottom: 40px;
+                span {
+                    color: #d3531a;
+                    font-size: 95px;
+                    font-weight: 700;
+                }
+            }
+        }
     }
 }

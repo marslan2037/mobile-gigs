@@ -1,0 +1,22 @@
+footer  {
+    background-color:#110702;
+    color: #fff;
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 67px;
+        padding: 90px 160px 0px 160px; 
+        .footer-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            h2 {
+                font-size: 64px;
+                font-weight: 700;
+                font-style: normal;
+            }
+        }
+    }
+}
