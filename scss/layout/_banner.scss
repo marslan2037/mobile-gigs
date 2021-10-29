@@ -1,18 +1,35 @@
 .banner {
-    background: #fdeadf;
-    padding-bottom: 166px;
+    // background: #fdeadf;
+    background-image: url(/images/banner-bg.png);
+    // padding-bottom: 166px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 880px;
+    padding: 0px 65px;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        padding: 0px 20px;
+        height: auto;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        padding: 0px 30px;
+    }
     .header-content {
         display: grid;
         grid-template-columns: auto 1fr;
         justify-items: end;
-
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
         .logo {
-            width: 330px;
-            height: 220px;
+            width: 210px;
+            height: 135px;
             a {
                 display: block;
-                width: 320px;
-                height: 220px;
+                width: 210px;
+                height: 135px;
                 text-indent: -9000px;
                 background-image: url(../../images/logo.png);
                 background-size: cover;
@@ -26,10 +43,15 @@
             button {
                 border: 1px solid #d3531a;
                 background: #fdeadf;
-                font-size: 30px;
-                font-weight: 900;
+                font-size: 14px;
+                font-weight: 600;
                 font-style: normal;
                 text-transform: uppercase;
+                &:hover {
+                    background-color: #d3531a;
+                    border: 3px solid #fdeadf;
+                    color: #fdeadf;
+                }
             }
         }
     }
@@ -38,18 +60,35 @@
         grid-template-columns: 1fr 1fr;
         align-items: center;
 
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .mob-img {
+            img {
+                width: 100%;
+            }
+        }
         .banner-title {
             h1 {
-                font-size: 75px;
+                font-size: 50px;
                 font-weight: 600;
                 font-style: normal;
                 font-family: "Poppins";
-                line-height: 115px;
+                line-height: 70px;
                 margin-bottom: 40px;
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    font-size: 30px;
+                    line-height: 50px;
+                }
                 span {
                     color: #d3531a;
-                    font-size: 95px;
+                    font-size: 55px;
                     font-weight: 700;
+                    display: block;
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        font-size: 35px;
+                    }
                 }
             }
         }
