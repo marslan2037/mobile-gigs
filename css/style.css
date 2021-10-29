@@ -1,0 +1,23 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+.main-container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.main-container .inner-container {
+  max-width: 1790px;
+  margin: 0 auto;
+}
+
+header .logo {
+  width: 330px;
+  height: 220px;
+}
+
+/*# sourceMappingURL=style.css.map */
