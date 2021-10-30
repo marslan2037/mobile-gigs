@@ -19,18 +19,27 @@ button {
         width: 115px;
     }
 }
-.playstore-btn {
+.store-buttons {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 250px 250px;
     grid-gap: 30px;
     @media screen and (min-width: 320px) and (max-width: 767px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;
     }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+      }
     a {
-        img{
+        img {
             width: 250px;
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                width: 100%;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+              width: 100%;
+            }
         }
     }
 }

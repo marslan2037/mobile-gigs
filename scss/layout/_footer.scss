@@ -1,57 +1,64 @@
 footer {
     background-color: #110702;
+    padding: 120px 120px 40px;
     color: #fff;
-
-    .footer-content {
-        display: grid;
+    height: 340px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    @media (min-width: 320px) and (max-width: 767px) {
+        padding: 20px 15px;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto;
-        grid-gap: 67px;
-        justify-items: center;
-        padding: 90px 65px 20px;
-        @media screen and (min-width: 320px) and (max-width: 767px) {
-            grid-template-rows: 1fr 1fr;
+        height: auto;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        grid-template-columns: 1fr 2fr;
+        padding: 25px 20px 20px;
+        grid-gap: 25px;
+        height: auto;
+    }
+    h2 {
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 700;
+        @media (min-width: 320px) and (max-width: 767px) {
+            font-size: 26px;
+            margin: 0 0 20px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            font-size: 35px;
+        }
+    }
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @media (min-width: 320px) and (max-width: 767px) {
             grid-template-columns: 1fr;
-            grid-gap: 0px;
-            padding: 20px 20px;
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
-            padding: 40px 20px;
-        }
-        .footer-info {
+        li {
+            color: #fff;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 157px;
-            align-items: baseline;
-            @media screen and (min-width: 320px) and (max-width: 767px) {
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr 1fr;
-                grid-gap: 0px;
+            grid-template-columns: auto 1fr;
+            grid-gap: 12px;
+            align-items: center;
+            @media (min-width: 320px) and (max-width: 767px) {
+                grid-template-columns: 16px 1fr;
+                margin: 0 0 15px;
             }
-            h2 {
-                font-size: 46px;
-                font-weight: 700;
-                font-style: normal;
+            @media (min-width: 320px) and (max-width: 767px) {
+                line-height: 30px;
             }
-            .footer-address {
-                display: grid;
-                grid-template-columns: auto 1fr;
-                grid-gap: 22px;
-                .mail-address {
-                    line-height: 24px;
-                    font-size: 20px;
-                }
-                p {
-                    font-size: 20px;
-                    line-height: 36px;
-                }
+            img {
+                width: 100%;
             }
         }
-        p {
-            align-self: center;
-            font-size: 18px;
-            font-weight: 400;
-            font-style: normal;
+    }
+    p {
+        grid-column: 1 / 3;
+        text-align: center;
+        align-self: end;
+        @media (min-width: 320px) and (max-width: 767px) {
+            grid-column: initial;
         }
     }
 }

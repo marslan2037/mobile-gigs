@@ -3,11 +3,11 @@
         text-align: center;
         padding: 130px 0;
         @media screen and (min-width: 320px) and (max-width: 767px) {
-            padding: 60px 0px;
+            padding: 35px 0px;
         }
 
         @media screen and (min-width: 768px) and (max-width: 1023px) {
-            padding: 70px 0px;
+            padding: 50px 0px;
         }
         button {
             width: 400px;
@@ -19,20 +19,26 @@
             border: 1px solid #f69765;
             font-weight: 700;
             border-radius: 20px;
-            @media screen and (min-width: 320px) and (max-width: 767px) {
-                width: 260px;
-                height: 95px;
-                font-size: 20px;
-            }
             &:hover {
                 background-color: #fff;
                 border: 1px solid #f69765;
                 color: #f69765;
             }
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                width: 240px;
+                height: 60px;
+                font-size: 20px;
+                border-radius: 6px;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+             width: 270px;
+             height: 80px;
+             font-size: 22px;
+             border-radius: 12px;
+            }
         }
     }
     .find-mobile {
-        // background-color: #F69765;
         background-image: url(/images/content-bg.png);
         height: 340px;
         background-repeat: no-repeat;
@@ -40,38 +46,41 @@
         padding: 150px 0px;
         @media screen and (min-width: 320px) and (max-width: 767px) {
             height: auto;
-            padding: 60px 0px;
+            padding: 60px 0px 40px;
         }
         @media screen and (min-width: 768px) and (max-width: 1023px) {
-            padding: 115px 0px 0px;
+            height: auto;
+            padding: 80px 0px 45px;
         }
         .m-grid {
             display: grid;
             grid-template-columns: auto 1fr;
             grid-gap: 76px;
             align-items: center;
-            padding: 0px 65px;
+            padding: 0px 120px;
             @media screen and (min-width: 320px) and (max-width: 767px) {
                 grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr;
-                grid-gap: 40px;
+                grid-gap: 20px;
                 padding: 0px 20px;
             }
             @media screen and (min-width: 768px) and (max-width: 1023px) {
-                grid-template-columns: 1fr;
                 grid-gap: 35px;
-                padding: 0px 50px;
-                justify-items: center;
+                padding: 0px 20px;
+                justify-items: left;
             }
         }
         h3 {
-            font-size: 40px;
+            font-size: 52px;
             line-height: 30px;
             font-weight: 400;
             text-transform: uppercase;
             @media screen and (min-width: 320px) and (max-width: 767px) {
-                font-size: 27px;
+                font-size: 24px;
                 line-height: 37px;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+               font-size: 36px;
+               text-align: left;
             }
         }
     }
